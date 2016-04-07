@@ -127,15 +127,6 @@
 <libraries>
 <library name="georgelachow-Lab2">
 <packages>
-<package name="PJ-102A">
-<wire x1="-14.56" y1="-0.045" x2="0.04" y2="-0.045" width="0.127" layer="21"/>
-<wire x1="0.04" y1="-0.045" x2="0.04" y2="-9.045" width="0.127" layer="21"/>
-<wire x1="0.04" y1="-9.045" x2="-14.56" y2="-9.045" width="0.127" layer="21"/>
-<pad name="RING_SW" x="-3.87" y="-9.045" drill="2" diameter="3.5" rot="R270"/>
-<pad name="TIP" x="-0.87" y="-4.345" drill="2" diameter="3.5" rot="R270"/>
-<pad name="RING" x="-6.77" y="-4.345" drill="2" diameter="3.5" rot="R270"/>
-<wire x1="-14.55824375" y1="-0.052128125" x2="-14.57559375" y2="-9.07015" width="0.127" layer="21"/>
-</package>
 <package name="1301.9315">
 <smd name="4" x="5" y="-2.25" dx="2.1" dy="1.4" layer="1" rot="R180"/>
 <smd name="2" x="5" y="2.25" dx="2.1" dy="1.4" layer="1" rot="R180"/>
@@ -173,6 +164,15 @@
 <wire x1="3" y1="2.95" x2="3" y2="1.55" width="0.127" layer="21"/>
 <wire x1="3" y1="1.55" x2="6.05" y2="1.55" width="0.127" layer="21"/>
 <wire x1="6.05" y1="1.55" x2="6.05" y2="2.95" width="0.127" layer="21"/>
+</package>
+<package name="PJ-102A">
+<wire x1="-14.56" y1="-0.045" x2="0.04" y2="-0.045" width="0.127" layer="21"/>
+<wire x1="0.04" y1="-0.045" x2="0.04" y2="-9.045" width="0.127" layer="21"/>
+<wire x1="0.04" y1="-9.045" x2="-14.56" y2="-9.045" width="0.127" layer="21"/>
+<pad name="RING_SW" x="-3.87" y="-9.045" drill="2" diameter="3.5" rot="R270"/>
+<pad name="TIP" x="-0.87" y="-4.345" drill="2" diameter="3.5" rot="R270"/>
+<pad name="RING" x="-6.77" y="-4.345" drill="2" diameter="3.5" rot="R270"/>
+<wire x1="-14.55824375" y1="-0.052128125" x2="-14.57559375" y2="-9.07015" width="0.127" layer="21"/>
 </package>
 <package name="LED5MM">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
@@ -308,6 +308,21 @@
 </package>
 </packages>
 <symbols>
+<symbol name="1301.9315">
+<pin name="1" x="-5.08" y="2.54" visible="pad" length="point"/>
+<pin name="2" x="5.08" y="2.54" visible="pad" length="point"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="point"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pad" length="point"/>
+<text x="-7.62" y="5.08" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="94">&gt;VALUE</text>
+<wire x1="-5.08" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+</symbol>
 <symbol name="POWERJACK-1">
 <wire x1="2.54" y1="3.175" x2="0" y2="3.175" width="0.254" layer="94"/>
 <wire x1="0" y1="3.175" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
@@ -322,21 +337,6 @@
 <pin name="TIP" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="RING" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="RING_SW" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-</symbol>
-<symbol name="1301.9315">
-<text x="-3.0376" y="12.0602" size="1.27" layer="95">SWITCH</text>
-<text x="-3.92" y="2" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="S$1" x="-3.08" y="10" length="point" rot="R180"/>
-<pin name="S$3" x="-3.08" y="5" length="point" rot="R180"/>
-<pin name="S$2" x="7.08" y="10" length="point"/>
-<pin name="S$4" x="7.08" y="5" length="point"/>
-<wire x1="-3" y1="10" x2="2" y2="10" width="0.254" layer="94"/>
-<wire x1="2" y1="10" x2="2" y2="8" width="0.254" layer="94"/>
-<wire x1="-3" y1="5" x2="2" y2="5" width="0.254" layer="94"/>
-<wire x1="2" y1="5" x2="2" y2="7" width="0.254" layer="94"/>
-<wire x1="2" y1="7" x2="1" y2="8" width="0.254" layer="94"/>
-<wire x1="7" y1="10" x2="2" y2="10" width="0.254" layer="94"/>
-<wire x1="7" y1="5" x2="2" y2="5" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LED">
 <wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
@@ -380,26 +380,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2.1MMJACK" prefix="J">
-<description>2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537 &lt;br&gt;
-2.1mm x 5.5mm SMT DC jack with internal switch. Digikey part #PJ-002A-SMT, 4UCON part #03267
-&lt;p&gt;By microbuilder.eu &amp; adafruit.com&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="POWERJACK-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="THM" package="PJ-102A">
-<connects>
-<connect gate="G$1" pin="RING" pad="RING"/>
-<connect gate="G$1" pin="RING_SW" pad="RING_SW"/>
-<connect gate="G$1" pin="TIP" pad="TIP"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="1301.9315" prefix="S" uservalue="yes">
 <description>1301.9315 - BUTTON-TACTILE-SQUARE
 &lt;ul&gt;
@@ -413,10 +393,30 @@
 <devices>
 <device name="" package="1301.9315">
 <connects>
-<connect gate="G$1" pin="S$1" pad="1"/>
-<connect gate="G$1" pin="S$2" pad="2"/>
-<connect gate="G$1" pin="S$3" pad="3"/>
-<connect gate="G$1" pin="S$4" pad="4"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2.1MMJACK" prefix="J">
+<description>2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537 &lt;br&gt;
+2.1mm x 5.5mm SMT DC jack with internal switch. Digikey part #PJ-002A-SMT, 4UCON part #03267
+&lt;p&gt;By microbuilder.eu &amp; adafruit.com&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POWERJACK-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="THM" package="PJ-102A">
+<connects>
+<connect gate="G$1" pin="RING" pad="RING"/>
+<connect gate="G$1" pin="RING_SW" pad="RING_SW"/>
+<connect gate="G$1" pin="TIP" pad="TIP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -540,20 +540,20 @@ Source: http://www.osram.convergy.de/</description>
 </class>
 </classes>
 <parts>
-<part name="J1" library="georgelachow-Lab2" deviceset="2.1MMJACK" device="THM"/>
 <part name="S1" library="georgelachow-Lab2" deviceset="1301.9315" device=""/>
-<part name="LED1" library="georgelachow-Lab2" deviceset="LED" device="5MM"/>
-<part name="U$1" library="georgelachow-Lab2" deviceset="RESISTOR" device="TH-1/4W-CARBON"/>
+<part name="J1" library="georgelachow-Lab2" deviceset="2.1MMJACK" device="THM"/>
+<part name="LED1" library="georgelachow-Lab2" deviceset="LED" device="5MM" value="Red"/>
+<part name="U$1" library="georgelachow-Lab2" deviceset="RESISTOR" device="TH-1/4W-CARBON" value="330Ohms"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="60.96" y="83.82"/>
-<instance part="S1" gate="G$1" x="78.74" y="76.2"/>
-<instance part="LED1" gate="G$1" x="68.58" y="96.52" rot="R90"/>
-<instance part="U$1" gate="G$1" x="81.28" y="96.52"/>
+<instance part="S1" gate="G$1" x="86.36" y="83.82"/>
+<instance part="J1" gate="G$1" x="66.04" y="83.82"/>
+<instance part="LED1" gate="G$1" x="73.66" y="96.52" rot="R90"/>
+<instance part="U$1" gate="G$1" x="86.36" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -562,27 +562,28 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="J1" gate="G$1" pin="TIP"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="66.04" y1="86.36" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="86.36" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="96.52" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="96.52" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
+<pinref part="S1" gate="G$1" pin="3"/>
 <pinref part="J1" gate="G$1" pin="RING"/>
-<wire x1="76.2" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
